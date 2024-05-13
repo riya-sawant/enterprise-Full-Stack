@@ -1,0 +1,79 @@
+<web-app>
+
+   <!-- General description of your Web application -->
+   <display-name>
+      CNT 4714 Remote Database Mangement System
+   </display-name>
+
+   <!-- Servlet definitions and mappings  -->
+   <!--Authentication Servlet -->
+   <servlet>
+      <servlet-name>alpha</servlet-name>
+      <servlet-class>project4.authenticationServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>alpha</servlet-name>
+      <url-pattern>/AuthenticationApp</url-pattern>
+   </servlet-mapping>
+
+   <!--Root Servlet -->
+   <servlet>
+      <servlet-name>beta</servlet-name>
+      <servlet-class>project4.rootUserServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>beta</servlet-name>
+      <url-pattern>/RootApp</url-pattern>
+   </servlet-mapping>
+
+   <!--Client Servlet -->
+   <servlet>
+      <servlet-name>gamma1</servlet-name>
+      <servlet-class>project4.clientUserServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>gamma1</servlet-name>
+      <url-pattern>/ClientApp</url-pattern>
+   </servlet-mapping>
+
+   <!--Data Entry Servlet (Suppliers) -->
+   <servlet>
+      <servlet-name>gamma2</servlet-name>
+      <servlet-class>project4.AddSupplierRecordServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>gamma2</servlet-name>
+      <url-pattern>/InsertSuppliersApp</url-pattern>
+   </servlet-mapping>
+
+   <!--Data Entry Servlet (Parts) -->
+   <servlet>
+      <servlet-name>gamma3</servlet-name>
+      <servlet-class>project4.AddPartsRecordServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>gamma3</servlet-name>
+      <url-pattern>/InsertPartsApp</url-pattern>
+   </servlet-mapping>
+
+   <!--Data Entry Servlet (Jobs) -->
+   <servlet>
+      <servlet-name>gamma4</servlet-name>
+      <servlet-class>project4.AddJobsRecordServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>gamma4</servlet-name>
+      <url-pattern>/InsertJobsApp</url-pattern>
+   </servlet-mapping>
+
+   <!--Data Entry Servlet (Shipments) -->
+   <servlet>
+      <servlet-name>gamma5</servlet-name>
+      <servlet-class>project4.AddShipmentsRecordServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>gamma5</servlet-name>
+      <url-pattern>/InsertShipmentsApp</url-pattern>
+   </servlet-mapping>
+
+</web-app>
